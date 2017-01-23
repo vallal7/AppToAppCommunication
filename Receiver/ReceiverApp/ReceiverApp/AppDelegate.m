@@ -25,7 +25,7 @@
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    // Display text
+    // the message sent is retrieved
     NSString *text = [[url host] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"Received text is %@",text);
     return YES;
